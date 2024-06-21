@@ -97,7 +97,10 @@ async function search(value) {
       "There Has Been A Problem With Your Fetch Operation: ",
       error
     );
-    myModal.show();
+
+    if (searchInput.value !== "") {
+      myModal.show();
+    }
   }
 }
 
@@ -112,9 +115,7 @@ function dayAndMonth(dateString) {
 
 function displayData(dayOne, dayTwo, dayThree) {
   updateToday(dayOne);
-
   updateSecondDay(dayTwo);
-
   updateThirdDay(dayThree);
 }
 
