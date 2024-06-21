@@ -102,7 +102,7 @@ async function search(value) {
       if (searchInput.value !== "") {
         myModal.show();
       }
-    }, 400);
+    }, 2000);
   }
 }
 
