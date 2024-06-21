@@ -98,9 +98,11 @@ async function search(value) {
       error
     );
 
-    if (searchInput.value !== "") {
-      myModal.show();
-    }
+    setTimeout(() => {
+      if (searchInput.value !== "") {
+        myModal.show();
+      }
+    }, 400);
   }
 }
 
