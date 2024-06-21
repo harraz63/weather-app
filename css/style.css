@@ -319,5 +319,9 @@ body {
     border-color: #009ad8 !important;
     color: #009ad8 !important;
   }
+  
+  .today .degree div {
+    font-size: 87px;
+  }
 }
 /* End Media Query Styling */
