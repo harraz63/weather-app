@@ -1,6 +1,8 @@
 const searchBtn = document.getElementById("searchBtn");
 const searchInput = document.getElementById("weatherSearch");
 
+const myModal = new bootstrap.Modal(document.getElementById("myModal"));
+
 searchInput.addEventListener("keyup", function () {
   setTimeout(() => {
     search(searchInput.value);
@@ -95,6 +97,7 @@ async function search(value) {
       "There Has Been A Problem With Your Fetch Operation: ",
       error
     );
+    myModal.show();
   }
 }
 

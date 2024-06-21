@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Ahmed Harraz">
+  <link rel="shortcut icon" href="img/logo@2x.png" type="image/x-icon" />
   <title>Weather</title>
   <!-- Bootstarp CSS File -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -203,6 +204,44 @@
       </div>
     </div>
   </footer>
+
+
+
+
+  <div id="myModal" class="modal" tabindex="">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 bg-dark">
+        <!-- Modal Header -->
+        <div class="modal-header border-0 p-0 pb-1">
+          <!-- Circles indicating some status or decoration -->
+          <div class="circles d-flex gap-1">
+            <span class="rounded-circle"></span>
+            <span class="rounded-circle"></span>
+            <span class="rounded-circle"></span>
+          </div>
+          <!-- Close Button -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body p-0 pt-3">
+          <p class="text-white text-center">
+            Sorry, something is wrong!
+          </p>
+          <!-- List of possible issues -->
+          <ul class="rules list-unstyled m-0 text-white">
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>
+              Please check your connection
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>
+              Please check if the city name is correct
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
